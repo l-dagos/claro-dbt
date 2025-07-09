@@ -1,0 +1,13 @@
+demo:
+  target: dev
+  outputs:
+    dev:
+      type: oracle
+      threads: 1
+      host: "{{ env_var('DBT_ORACLE_HOST') }}"
+      user: "{{ env_var('DBT_ORACLE_USER') }}"
+      password: "{{ env_var('DBT_ORACLE_PASSWORD') }}"
+      service: "{{ env_var('DBT_ORACLE_SERVICE') }}"
+      schema: "{{ env_var('DBT_ORACLE_SCHEMA') }}"
+      port: "{{ env_var('DBT_ORACLE_PORT') }}"
+      protocol: "{{ env_var('DBT_ORACLE_PROTOCOL') }}"
