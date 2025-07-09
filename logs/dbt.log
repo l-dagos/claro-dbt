@@ -1,0 +1,49 @@
+[0m11:56:31.577945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4595fb93f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45948bb070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45948bb010>]}
+
+
+============================== 11:56:31.596095 | e20994b5-4492-49e4-be2d-e05a70d3d6f7 ==============================
+[0m11:56:31.596095 [info ] [MainThread]: Running with dbt=1.9.8
+[0m11:56:31.596494 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/ldagostino/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:56:51.246845 [debug] [MainThread]: Starter project path: /home/ldagostino/claro-dbt/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m11:56:51.252386 [info ] [MainThread]: 
+Your new dbt project "demo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:56:51.252887 [info ] [MainThread]: Setting up your profile.
+[0m11:56:54.529597 [info ] [MainThread]: oracle adapter: Running in thin mode
+[0m11:58:34.077461 [info ] [MainThread]: Profile demo written to /home/ldagostino/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:58:34.079140 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 122.53553, "process_in_blocks": "63800", "process_kernel_time": 0.087258, "process_mem_max_rss": "108580", "process_out_blocks": "26712", "process_user_time": 1.634106}
+[0m11:58:34.080586 [debug] [MainThread]: Command `dbt init` succeeded at 11:58:34.080348 after 122.54 seconds
+[0m11:58:34.081454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4595fb93f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4594de7e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4594e65b40>]}
+[0m11:58:34.082248 [debug] [MainThread]: Flushing usage events
+[0m11:58:34.814275 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:58:42.537198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30da991720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30d9d57d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30d9aed8d0>]}
+
+
+============================== 11:58:42.539021 | ae15e7d0-f107-4553-ba3d-cdbaf14b45ad ==============================
+[0m11:58:42.539021 [info ] [MainThread]: Running with dbt=1.9.8
+[0m11:58:42.539539 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/ldagostino/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:58:42.547424 [info ] [MainThread]: dbt version: 1.9.8
+[0m11:58:42.547766 [info ] [MainThread]: python version: 3.10.18
+[0m11:58:42.548036 [info ] [MainThread]: python path: /home/ldagostino/claro-dbt/.venv/bin/python3
+[0m11:58:42.548249 [info ] [MainThread]: os info: Linux-6.1.0-37-amd64-x86_64-with-glibc2.36
+[0m11:58:42.552005 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_ORACLE_HOST'
+[0m11:58:42.552537 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.04979211, "process_in_blocks": "16", "process_kernel_time": 0.027998, "process_mem_max_rss": "92728", "process_out_blocks": "72", "process_user_time": 0.77597}
+[0m11:58:42.552878 [debug] [MainThread]: Command `dbt debug` failed at 11:58:42.552813 after 0.05 seconds
+[0m11:58:42.553139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30da991720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30da183460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30da84f2b0>]}
+[0m11:58:42.553419 [debug] [MainThread]: Flushing usage events
+[0m11:58:43.415541 [debug] [MainThread]: An error was encountered while trying to flush usage events
