@@ -34,3 +34,12 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    
+    # Configuración para modelos de phone_balance
+    phone_balance:
+      +materialized: view
+      # Los modelos de resumen como tablas para mejor performance
+      balance_summary:
+        +materialized: table
+      segment_analysis:
+        +materialized: table

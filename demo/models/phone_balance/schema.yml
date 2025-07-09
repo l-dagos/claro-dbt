@@ -1,0 +1,108 @@
+version: 2
+
+models:
+  - name: base_phone_balance
+    description: "Modelo base que extrae datos de balances de líneas prepago desde ABT_MOTHER"
+    columns:
+      - name: created_at
+        description: "Fecha de creación del registro"
+        data_tests:
+          - not_null
+      - name: phone_line
+        description: "Número de línea telefónica celular"
+        data_tests:
+          - not_null
+      - name: balance
+        description: "Balance principal de la línea prepago"
+        data_tests:
+          - not_null
+      - name: last_update
+        description: "Fecha de última actualización del registro"
+        data_tests:
+          - not_null
+
+  - name: balance_summary
+    description: "Resumen estadístico agregado de todos los balances de líneas prepago"
+    columns:
+      - name: total_lines
+        description: "Número total de líneas registradas"
+        data_tests:
+          - not_null
+      - name: unique_lines
+        description: "Número de líneas únicas"
+        data_tests:
+          - not_null
+      - name: avg_balance
+        description: "Balance promedio de todas las líneas"
+        data_tests:
+          - not_null
+      - name: min_balance
+        description: "Balance mínimo encontrado"
+      - name: max_balance
+        description: "Balance máximo encontrado"
+      - name: total_balance
+        description: "Suma total de todos los balances"
+        data_tests:
+          - not_null
+      - name: median_balance
+        description: "Balance mediano de todas las líneas"
+
+  - name: balance_segments
+    description: "Segmentación de líneas por rangos de balance para análisis de distribución"
+    columns:
+      - name: phone_line
+        description: "Número de línea telefónica"
+        data_tests:
+          - not_null
+      - name: balance
+        description: "Balance de la línea"
+        data_tests:
+          - not_null
+      - name: balance_segment
+        description: "Categoría del balance (Sin balance, Bajo, Medio, Alto, Muy alto)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['Sin balance', 'Balance bajo (1-50)', 'Balance medio (51-200)', 'Balance alto (201-500)', 'Balance muy alto (500+)', 'Sin clasificar']
+      - name: segment_order
+        description: "Orden numérico del segmento para ordenamiento"
+        data_tests:
+          - not_null
+
+  - name: segment_analysis
+    description: "Análisis agregado de la distribución por segmentos de balance"
+    columns:
+      - name: balance_segment
+        description: "Categoría del balance"
+        data_tests:
+          - not_null
+      - name: line_count
+        description: "Cantidad de líneas en este segmento"
+        data_tests:
+          - not_null
+      - name: avg_balance_in_segment
+        description: "Balance promedio dentro del segmento"
+      - name: total_balance_in_segment
+        description: "Balance total del segmento"
+      - name: percentage_of_lines
+        description: "Porcentaje de líneas que representa este segmento"
+      - name: percentage_of_total_balance
+        description: "Porcentaje del balance total que representa este segmento"
+
+  - name: balance_with_macro
+    description: "Demostración del uso de macros para clasificación de balances"
+    columns:
+      - name: phone_line
+        description: "Número de línea telefónica"
+        data_tests:
+          - not_null
+      - name: balance
+        description: "Balance de la línea"
+        data_tests:
+          - not_null
+      - name: tier_from_macro
+        description: "Clasificación de balance generada usando el macro balance_tier"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['Sin balance', 'Balance bajo', 'Balance medio', 'Balance alto', 'Balance muy alto', 'Sin clasificar'] 
