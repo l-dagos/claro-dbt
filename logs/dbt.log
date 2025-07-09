@@ -47,3 +47,237 @@ Parsing Error
 [0m11:58:42.553139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30da991720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30da183460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30da84f2b0>]}
 [0m11:58:42.553419 [debug] [MainThread]: Flushing usage events
 [0m11:58:43.415541 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:16:06.262643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b8e559780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b8d947c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b8d947610>]}
+
+
+============================== 13:16:06.265039 | db18ab55-4e6c-421d-a635-a8bd8367a8d8 ==============================
+[0m13:16:06.265039 [info ] [MainThread]: Running with dbt=1.9.8
+[0m13:16:06.265416 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/home/ldagostino/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:16:06.272645 [info ] [MainThread]: dbt version: 1.9.8
+[0m13:16:06.273002 [info ] [MainThread]: python version: 3.10.18
+[0m13:16:06.273274 [info ] [MainThread]: python path: /home/ldagostino/claro-dbt/.venv/bin/python3
+[0m13:16:06.273536 [info ] [MainThread]: os info: Linux-6.1.0-37-amd64-x86_64-with-glibc2.36
+[0m13:16:06.276045 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_ORACLE_HOST'
+[0m13:16:06.276592 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.04700346, "process_in_blocks": "46064", "process_kernel_time": 0.041269, "process_mem_max_rss": "92224", "process_out_blocks": "8", "process_user_time": 0.759356}
+[0m13:16:06.276934 [debug] [MainThread]: Command `dbt debug` failed at 13:16:06.276846 after 0.05 seconds
+[0m13:16:06.277249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b8e559780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b8d6fb190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b8d6fb280>]}
+[0m13:16:06.277919 [debug] [MainThread]: Flushing usage events
+[0m13:16:07.009046 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:16:41.926856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74c4a59750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74c42267a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74c4227af0>]}
+
+
+============================== 13:16:41.928826 | 04253665-bee3-48dc-b2d9-157fc979c4ab ==============================
+[0m13:16:41.928826 [info ] [MainThread]: Running with dbt=1.9.8
+[0m13:16:41.929272 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/ldagostino/claro-dbt/dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:16:41.934212 [info ] [MainThread]: dbt version: 1.9.8
+[0m13:16:41.934524 [info ] [MainThread]: python version: 3.10.18
+[0m13:16:41.934746 [info ] [MainThread]: python path: /home/ldagostino/claro-dbt/.venv/bin/python3
+[0m13:16:41.934972 [info ] [MainThread]: os info: Linux-6.1.0-37-amd64-x86_64-with-glibc2.36
+[0m13:16:41.938083 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_ORACLE_HOST'
+[0m13:16:41.938571 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.045388207, "process_in_blocks": "0", "process_kernel_time": 0.043993, "process_mem_max_rss": "92536", "process_out_blocks": "16", "process_user_time": 0.731885}
+[0m13:16:41.938900 [debug] [MainThread]: Command `dbt debug` failed at 13:16:41.938838 after 0.05 seconds
+[0m13:16:41.939162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74c4a59750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74c3bdad40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74c3bdace0>]}
+[0m13:16:41.939546 [debug] [MainThread]: Flushing usage events
+[0m13:16:42.849760 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:17:03.233933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50429519c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5042149db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5042148e50>]}
+
+
+============================== 13:17:03.235600 | 011bee51-0ed8-4246-9b0a-56d2d2acee03 ==============================
+[0m13:17:03.235600 [info ] [MainThread]: Running with dbt=1.9.8
+[0m13:17:03.235995 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/ldagostino/claro-dbt/dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:17:03.241173 [info ] [MainThread]: dbt version: 1.9.8
+[0m13:17:03.241490 [info ] [MainThread]: python version: 3.10.18
+[0m13:17:03.241714 [info ] [MainThread]: python path: /home/ldagostino/claro-dbt/.venv/bin/python3
+[0m13:17:03.241912 [info ] [MainThread]: os info: Linux-6.1.0-37-amd64-x86_64-with-glibc2.36
+[0m13:17:03.294236 [info ] [MainThread]: oracle adapter: Running in thin mode
+[0m13:17:03.331505 [info ] [MainThread]: Using profiles dir at /home/ldagostino/claro-dbt/dbt
+[0m13:17:03.331922 [info ] [MainThread]: Using profiles.yml file at /home/ldagostino/claro-dbt/dbt/profiles.yml
+[0m13:17:03.332383 [info ] [MainThread]: Using dbt_project.yml file at /home/ldagostino/claro-dbt/dbt_project.yml
+[0m13:17:03.333324 [info ] [MainThread]: adapter type: oracle
+[0m13:17:03.333711 [info ] [MainThread]: adapter version: 1.9.1
+[0m13:17:03.333996 [info ] [MainThread]: Configuration:
+[0m13:17:03.334229 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:17:03.334446 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:17:03.334664 [info ] [MainThread]: Required dependencies:
+[0m13:17:03.334902 [debug] [MainThread]: Executing "git --help"
+[0m13:17:03.336116 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:17:03.336475 [debug] [MainThread]: STDERR: "b''"
+[0m13:17:03.336711 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:17:03.336939 [info ] [MainThread]: Connection:
+[0m13:17:03.337183 [info ] [MainThread]:   user: AIRFLOW
+[0m13:17:03.337404 [info ] [MainThread]:   database: None
+[0m13:17:03.337635 [info ] [MainThread]:   schema: AIRFLOW
+[0m13:17:03.337848 [info ] [MainThread]:   protocol: tcp
+[0m13:17:03.338074 [info ] [MainThread]:   host: 10.92.78.30
+[0m13:17:03.338319 [info ] [MainThread]:   port: 1521
+[0m13:17:03.338548 [info ] [MainThread]:   tns_name: None
+[0m13:17:03.338774 [info ] [MainThread]:   service: RAC8.WORLD
+[0m13:17:03.338986 [info ] [MainThread]:   connection_string: None
+[0m13:17:03.339183 [info ] [MainThread]:   shardingkey: []
+[0m13:17:03.339380 [info ] [MainThread]:   supershardingkey: []
+[0m13:17:03.339578 [info ] [MainThread]:   cclass: None
+[0m13:17:03.339774 [info ] [MainThread]:   purity: None
+[0m13:17:03.339966 [info ] [MainThread]:   retry_count: 1
+[0m13:17:03.340160 [info ] [MainThread]:   retry_delay: 3
+[0m13:17:03.340395 [info ] [MainThread]:   oml_cloud_service_url: None
+[0m13:17:03.340631 [info ] [MainThread]:   session_info: {}
+[0m13:17:03.340955 [info ] [MainThread]: Registered adapter: oracle=1.9.1
+[0m13:17:03.385641 [debug] [MainThread]: Acquiring new oracle connection 'debug'
+[0m13:17:03.385990 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:17:03.386245 [debug] [MainThread]: oracle adapter: Attempting to connect using Oracle method: 'OracleConnectionMethod.HOST' and dsn: 'tcp://10.92.78.30:1521/RAC8.WORLD?retry_count=1&retry_delay=3'
+[0m13:17:03.561663 [debug] [MainThread]: oracle adapter: Session info :{"action": "DBT RUN", "client_identifier": "dbt-oracle-client-805b1bb3-c6f6-47f5-acde-b12e5151223a", "clientinfo": "debian_x86_64", "module": "dbt-1.9.8"}
+[0m13:17:03.570841 [warn ] [MainThread]: oracle adapter: [[33mWARNING[0m]: [33mdatabase key is missing from the target profile in the file profiles.yml 
+ Starting with dbt-oracle 1.8  database name is needed for catalog generation 
+ Without database key in the target profile the generated catalog will be empty 
+ i.e. `dbt docs generate` command will generate an empty catalog json 
+ Make the following entry in dbt profile.yml file for the target profile 
+ database: RAC8[0m
+[0m13:17:03.600602 [debug] [MainThread]: Using oracle connection "debug"
+[0m13:17:03.600975 [debug] [MainThread]: On debug: select 1 as id from dual
+[0m13:17:03.606687 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:17:03.607285 [debug] [MainThread]: On debug: Close
+[0m13:17:03.612375 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:17:03.612643 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:17:03.612884 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/ldagostino/claro-dbt/dbt_project.yml> not found
+
+[0m13:17:03.613438 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.41295996, "process_in_blocks": "30792", "process_kernel_time": 0.060102, "process_mem_max_rss": "117752", "process_out_blocks": "304", "process_user_time": 0.889519}
+[0m13:17:03.613929 [debug] [MainThread]: Command `dbt debug` failed at 13:17:03.613859 after 0.41 seconds
+[0m13:17:03.614208 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:17:03.614477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50429519c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50404cffa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f50404cfee0>]}
+[0m13:17:03.614795 [debug] [MainThread]: Flushing usage events
+[0m13:17:04.299521 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:17:30.770143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12f6151960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12f544fa00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12f544ce50>]}
+
+
+============================== 13:17:30.771850 | f10407bf-dacc-41c2-a1d2-5165073c552c ==============================
+[0m13:17:30.771850 [info ] [MainThread]: Running with dbt=1.9.8
+[0m13:17:30.772304 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/ldagostino/claro-dbt/dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:17:30.777479 [info ] [MainThread]: dbt version: 1.9.8
+[0m13:17:30.777790 [info ] [MainThread]: python version: 3.10.18
+[0m13:17:30.778006 [info ] [MainThread]: python path: /home/ldagostino/claro-dbt/.venv/bin/python3
+[0m13:17:30.778234 [info ] [MainThread]: os info: Linux-6.1.0-37-amd64-x86_64-with-glibc2.36
+[0m13:17:30.810570 [info ] [MainThread]: oracle adapter: Running in thin mode
+[0m13:17:30.846524 [info ] [MainThread]: Using profiles dir at /home/ldagostino/claro-dbt/dbt
+[0m13:17:30.846970 [info ] [MainThread]: Using profiles.yml file at /home/ldagostino/claro-dbt/dbt/profiles.yml
+[0m13:17:30.847308 [info ] [MainThread]: Using dbt_project.yml file at /home/ldagostino/claro-dbt/dbt_project.yml
+[0m13:17:30.847784 [info ] [MainThread]: adapter type: oracle
+[0m13:17:30.848136 [info ] [MainThread]: adapter version: 1.9.1
+[0m13:17:30.848470 [info ] [MainThread]: Configuration:
+[0m13:17:30.848758 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:17:30.849013 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:17:30.849271 [info ] [MainThread]: Required dependencies:
+[0m13:17:30.849553 [debug] [MainThread]: Executing "git --help"
+[0m13:17:30.850857 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:17:30.851210 [debug] [MainThread]: STDERR: "b''"
+[0m13:17:30.851452 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:17:30.851717 [info ] [MainThread]: Connection:
+[0m13:17:30.851959 [info ] [MainThread]:   user: AIRFLOW
+[0m13:17:30.852189 [info ] [MainThread]:   database: RAC8.WORLD
+[0m13:17:30.852446 [info ] [MainThread]:   schema: AIRFLOW
+[0m13:17:30.852674 [info ] [MainThread]:   protocol: tcp
+[0m13:17:30.852889 [info ] [MainThread]:   host: 10.92.78.30
+[0m13:17:30.853093 [info ] [MainThread]:   port: 1521
+[0m13:17:30.853295 [info ] [MainThread]:   tns_name: None
+[0m13:17:30.853500 [info ] [MainThread]:   service: RAC8.WORLD
+[0m13:17:30.853703 [info ] [MainThread]:   connection_string: None
+[0m13:17:30.853917 [info ] [MainThread]:   shardingkey: []
+[0m13:17:30.854140 [info ] [MainThread]:   supershardingkey: []
+[0m13:17:30.854354 [info ] [MainThread]:   cclass: None
+[0m13:17:30.854561 [info ] [MainThread]:   purity: None
+[0m13:17:30.854764 [info ] [MainThread]:   retry_count: 1
+[0m13:17:30.854981 [info ] [MainThread]:   retry_delay: 3
+[0m13:17:30.855196 [info ] [MainThread]:   oml_cloud_service_url: None
+[0m13:17:30.855402 [info ] [MainThread]:   session_info: {}
+[0m13:17:30.855767 [info ] [MainThread]: Registered adapter: oracle=1.9.1
+[0m13:17:30.896637 [debug] [MainThread]: Acquiring new oracle connection 'debug'
+[0m13:17:30.909079 [debug] [MainThread]: Using oracle connection "debug"
+[0m13:17:30.909445 [debug] [MainThread]: On debug: select 1 as id from dual
+[0m13:17:30.909668 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:17:30.909894 [debug] [MainThread]: oracle adapter: Attempting to connect using Oracle method: 'OracleConnectionMethod.HOST' and dsn: 'tcp://10.92.78.30:1521/RAC8.WORLD?retry_count=1&retry_delay=3'
+[0m13:17:31.085254 [debug] [MainThread]: oracle adapter: Session info :{"action": "DBT RUN", "client_identifier": "dbt-oracle-client-da0cab10-b430-4216-8fce-3d0c25e415cc", "clientinfo": "debian_x86_64", "module": "dbt-1.9.8"}
+[0m13:17:31.091889 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:17:31.094646 [debug] [MainThread]: On debug: Close
+[0m13:17:31.102708 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:17:31.104074 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:17:31.105097 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/ldagostino/claro-dbt/dbt_project.yml> not found
+
+[0m13:17:31.106550 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.36873335, "process_in_blocks": "0", "process_kernel_time": 0.043789, "process_mem_max_rss": "115168", "process_out_blocks": "24", "process_user_time": 0.875789}
+[0m13:17:31.107741 [debug] [MainThread]: Command `dbt debug` failed at 13:17:31.107546 after 0.37 seconds
+[0m13:17:31.108520 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:17:31.109208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12f6151960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12f3d9b0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12f3d9a9b0>]}
+[0m13:17:31.109875 [debug] [MainThread]: Flushing usage events
+[0m13:17:31.900482 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:21:07.706519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e3af45990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e3a718280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e3a719270>]}
+
+
+============================== 13:21:07.708152 | 97dcc92c-85f3-43cd-ae97-e113ca3abdaf ==============================
+[0m13:21:07.708152 [info ] [MainThread]: Running with dbt=1.9.8
+[0m13:21:07.708566 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/ldagostino/claro-dbt/dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:21:07.713620 [info ] [MainThread]: dbt version: 1.9.8
+[0m13:21:07.713941 [info ] [MainThread]: python version: 3.10.18
+[0m13:21:07.714198 [info ] [MainThread]: python path: /home/ldagostino/claro-dbt/.venv/bin/python3
+[0m13:21:07.714454 [info ] [MainThread]: os info: Linux-6.1.0-37-amd64-x86_64-with-glibc2.36
+[0m13:21:07.745566 [info ] [MainThread]: oracle adapter: Running in thin mode
+[0m13:21:07.782676 [info ] [MainThread]: Using profiles dir at /home/ldagostino/claro-dbt/dbt
+[0m13:21:07.783071 [info ] [MainThread]: Using profiles.yml file at /home/ldagostino/claro-dbt/dbt/profiles.yml
+[0m13:21:07.783348 [info ] [MainThread]: Using dbt_project.yml file at /home/ldagostino/claro-dbt/dbt_project.yml
+[0m13:21:07.783733 [info ] [MainThread]: adapter type: oracle
+[0m13:21:07.783984 [info ] [MainThread]: adapter version: 1.9.1
+[0m13:21:07.784268 [info ] [MainThread]: Configuration:
+[0m13:21:07.784528 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:21:07.784748 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:21:07.784987 [info ] [MainThread]: Required dependencies:
+[0m13:21:07.785243 [debug] [MainThread]: Executing "git --help"
+[0m13:21:07.786963 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:21:07.787413 [debug] [MainThread]: STDERR: "b''"
+[0m13:21:07.787661 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:21:07.787907 [info ] [MainThread]: Connection:
+[0m13:21:07.788186 [info ] [MainThread]:   user: AIRFLOW
+[0m13:21:07.788523 [info ] [MainThread]:   database: RAC8.WORLD
+[0m13:21:07.788746 [info ] [MainThread]:   schema: AIRFLOW
+[0m13:21:07.788952 [info ] [MainThread]:   protocol: tcp
+[0m13:21:07.789176 [info ] [MainThread]:   host: 10.92.78.30
+[0m13:21:07.789396 [info ] [MainThread]:   port: 1521
+[0m13:21:07.789614 [info ] [MainThread]:   tns_name: None
+[0m13:21:07.789831 [info ] [MainThread]:   service: RAC8.WORLD
+[0m13:21:07.790045 [info ] [MainThread]:   connection_string: None
+[0m13:21:07.790251 [info ] [MainThread]:   shardingkey: []
+[0m13:21:07.790471 [info ] [MainThread]:   supershardingkey: []
+[0m13:21:07.790688 [info ] [MainThread]:   cclass: None
+[0m13:21:07.790902 [info ] [MainThread]:   purity: None
+[0m13:21:07.791115 [info ] [MainThread]:   retry_count: 1
+[0m13:21:07.791317 [info ] [MainThread]:   retry_delay: 3
+[0m13:21:07.791521 [info ] [MainThread]:   oml_cloud_service_url: None
+[0m13:21:07.791736 [info ] [MainThread]:   session_info: {}
+[0m13:21:07.792510 [info ] [MainThread]: Registered adapter: oracle=1.9.1
+[0m13:21:07.834199 [debug] [MainThread]: Acquiring new oracle connection 'debug'
+[0m13:21:07.846310 [debug] [MainThread]: Using oracle connection "debug"
+[0m13:21:07.846654 [debug] [MainThread]: On debug: select 1 as id from dual
+[0m13:21:07.846877 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:21:07.847118 [debug] [MainThread]: oracle adapter: Attempting to connect using Oracle method: 'OracleConnectionMethod.HOST' and dsn: 'tcp://10.92.78.30:1521/RAC8.WORLD?retry_count=1&retry_delay=3'
+[0m13:21:08.024456 [debug] [MainThread]: oracle adapter: Session info :{"action": "DBT RUN", "client_identifier": "dbt-oracle-client-ff42e29d-897b-4610-946c-643122dc8a46", "clientinfo": "debian_x86_64", "module": "dbt-1.9.8"}
+[0m13:21:08.032239 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:21:08.035061 [debug] [MainThread]: On debug: Close
+[0m13:21:08.041443 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:21:08.042605 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:21:08.043393 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/ldagostino/claro-dbt/dbt_project.yml> not found
+
+[0m13:21:08.044686 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.37131655, "process_in_blocks": "0", "process_kernel_time": 0.080196, "process_mem_max_rss": "115144", "process_out_blocks": "24", "process_user_time": 0.846067}
+[0m13:21:08.045733 [debug] [MainThread]: Command `dbt debug` failed at 13:21:08.045575 after 0.37 seconds
+[0m13:21:08.046302 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:21:08.046821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e3af45990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e38b8f0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e38b8c550>]}
+[0m13:21:08.047358 [debug] [MainThread]: Flushing usage events
+[0m13:21:08.888953 [debug] [MainThread]: An error was encountered while trying to flush usage events

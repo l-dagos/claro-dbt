@@ -11,3 +11,4 @@ demo:
       schema: "{{ env_var('DBT_ORACLE_SCHEMA') }}"
       port: "{{ env_var('DBT_ORACLE_PORT') }}"
       protocol: "{{ env_var('DBT_ORACLE_PROTOCOL') }}"
+      database: "{{ env_var('DBT_ORACLE_DATABASE') }}"
