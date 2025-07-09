@@ -1,2 +1,13 @@
+# credentials
 .env
+
+# environment and uv lock files
 .venv/
+uv.lock
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+
+# logs
+logs/
