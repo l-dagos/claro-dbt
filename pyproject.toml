@@ -4,4 +4,8 @@ version = "0.1.0"
 description = "dbt (data build tool) for Claro"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "dbt-core>=1.9.8",
+    "dbt-oracle>=1.9.2",
+    "oracledb>=3.1.1",
+]
