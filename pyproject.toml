@@ -1,0 +1,7 @@
+[project]
+name = "claro-dbt"
+version = "0.1.0"
+description = "dbt (data build tool) for Claro"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
