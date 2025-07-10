@@ -6,6 +6,10 @@
 echo "🚀 Script de Demo DBT - Phone Balance"
 echo "======================================"
 
+# Asegurarnos de que DBT_PROFILES_DIR sea el directorio correcto
+export DBT_PROFILES_DIR=$(pwd)
+echo "DBT_PROFILES_DIR: $DBT_PROFILES_DIR"
+
 # Cargar variables de entorno
 set -o allexport
 if [ -f ".env" ]; then
