@@ -13,6 +13,8 @@ Esta demostración utiliza únicamente la tabla `phone_balance` para mostrar las
 - **`segment_analysis`**: Análisis de distribución por segmentos
 - **`balance_with_macro`**: Demostración del uso de macros
 
+![Diagrama](./diagrama.png)
+
 ## 📊 Qué podemos ver en esta demo?
 
 ### 1. Transformaciones básicas
@@ -50,15 +52,6 @@ Cada modelo incluye tests de datos para:
 ./demo-commands.sh test     # Ejecutar tests  
 ./demo-commands.sh docs     # Generar documentación
 ./demo-commands.sh clean    # Limpiar temporales
-
-# Usando run-dbt.sh directamente
-./run-dbt.sh run --select phone_balance
-./run-dbt.sh test --select phone_balance
-./run-dbt.sh docs generate
-./run-dbt.sh docs serve
-
-# Ejecutar un modelo específico
-./run-dbt.sh run --select base_phone_balance
 ```
 
 ## 📈 Métricas
